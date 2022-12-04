@@ -37,6 +37,7 @@ for k= 1:8
         for j=1:8
         
             if i~=j
+            if net1_r(i,j) > 0.075
    
                 model2 = load(fullfile(path_model,models(number(j)).name));
                 network2_neg = model2.CPM_Result.neg_mask;network2_neg(network2_neg<0.95)=0;network2_neg(network2_neg>0)=1;
@@ -65,7 +66,7 @@ for k= 1:8
                 [h, p, stats] = fishertest([round(all/2) all-round(all/2);samesite opposite]);
 
                 odd(i,j) =  stats.OddsRatio;
-
+            end
             end
 
         end
