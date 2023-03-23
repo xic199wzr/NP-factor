@@ -18,7 +18,6 @@
 ## Fifth, genetic association of the NP factor
 ### PRS of ADHD, MDD and IQ
 ### SNP of rs6780942
-### BrianSpan of NP factor 
 
 ## Last, generalisation of the NP factor
 ### ADHD-rest
