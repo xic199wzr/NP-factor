@@ -18,6 +18,7 @@
 ## Fifth, genetic association of the NP factor
 ### PRS of ADHD, MDD and IQ
 ### SNP of rs6780942
+### code for gene expression:.\BrainSpan_NP_factor
 
 ## Last, generalisation of the NP factor
 ### ADHD-rest
