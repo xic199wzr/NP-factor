@@ -1,28 +1,38 @@
 # NP-factor
-## First, estimating the task-based connectome for eight task conditions 
-### CONN v16 batch with the shen-268 template
-### code for task-based connectome estimation: .\functions\xic_conn_batch.m
 
-## Second, predicting each of the eight psychiatric symptoms
-### code for brain-behavior prediction:.\functions\CPM-master
-### using the default threshold p = 0.01, linear regression 
-### the significance level was set as 0.05/8/8 with Bonferroni correction
+## Overview
+This repository contains the code and documentation for estimating the task-based connectome, predicting psychiatric symptoms, analyzing cross-disorder networks, characterizing the NP factor neurobiologically, and investigating its genetic associations and generalization.
 
-## Thrid, we conducted the cross-disorder network for each task condition 
-### the edge was both predictive to externalising and internalising symptoms
-### the longitudinal analysis for each group of cross-disorder network
+## Steps
 
-## Fourth, neurobiological characterisation of the NP factor 
-### Brain anatomy, Cognitive behavior relevance
+### 1. Estimating the Task-Based Connectome for Eight Task Conditions
+- **Tool**: CONN v16 batch
+- **Template**: Shen-268
+- **Code**: `.\functions\xic_conn_batch.m`
 
-## Fifth, genetic association of the NP factor
-### PRS of ADHD, MDD and IQ
-### SNP of rs6780942
-### code for gene expression:.\BrainSpan_NP_factor
+### 2. Predicting Each of the Eight Psychiatric Symptoms
+- **Tool**: CPM-master
+- **Threshold**: Default p = 0.01
+- **Method**: Linear regression
+- **Significance Level**: 0.05/8/8 (Bonferroni correction)
+- **Code**: `.\functions\CPM-master`
 
-## Last, generalisation of the NP factor
-### ADHD-rest
-### ABCD-task
-### IMAGEN-rest
-### HCP-rest
-### Striatify-task
+### 3. Cross-Disorder Network Analysis for Each Task Condition
+- **Criteria**: Edge predictive to both externalizing and internalizing symptoms
+- **Analysis**: Longitudinal analysis for each group of cross-disorder networks
+
+### 4. Neurobiological Characterization of the NP Factor
+- **Aspects**: Brain anatomy, cognitive behavior relevance
+
+### 5. Genetic Association of the NP Factor
+- **PRS**: ADHD, MDD, and IQ
+- **SNP**: rs6780942
+- **Code**: `.\BrainSpan_NP_factor`
+
+### 6. Generalization of the NP Factor
+- **Datasets**:
+  - ADHD-rest
+  - ABCD-task
+  - IMAGEN-rest
+  - HCP-rest
+  - Striatify-task
